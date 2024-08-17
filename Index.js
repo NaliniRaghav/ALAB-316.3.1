@@ -117,9 +117,14 @@ subMenuEl.addEventListener('click', function (e) {
     });
 
      
-    if (e.target.textContent === "about") {
-        mainEl.innerHTML = `<h1>About</h1>`;
+    if (e.target.textContent === "About") {
+        mainEl.innerHTML = '<h1> About</h1>';
+        mainEl.innerHTML.setAttribute('class', 'flex-ctr');
+        
+        //mainEl.innerHTML = `<h1>About</h1`;
+      
     } else {
         mainEl.innerHTML = `<h1>${e.target.textContent}</h1>`;
+        
     }
 });
